@@ -15,7 +15,7 @@ export default class Menu extends React.Component {
                 borderRadius: 10,
                 justifyContent: 'center',
                 }} source={require('../par.jpg')}/>
-             <Text style={styles.item} onPress={() => this.props.myNavigation.navigate('Details')}>My Bookings</Text>
+             <Text style={styles.item} onPress={() => this.props.myNavigation.navigate('MyBooks')}>My Bookings</Text>
             </View>
             <View style={styles.itemsMenu}>
              <Image style={{
@@ -27,7 +27,7 @@ export default class Menu extends React.Component {
                 borderRadius: 10,
                 justifyContent: 'center',
                 }} source={require('../open.jpg')}/>
-             <Text style={styles.item} onPress={() => this.props.myNavigation.navigate('Details')}>Find Bookings</Text>
+             <Text style={styles.item} onPress={() => this.props.myNavigation.navigate('MyBooks')}>Find Bookings</Text>
             </View>
             <View style={styles.itemsMenu}>
              <Text style={styles.item}>Maps & Venues</Text>
@@ -65,6 +65,9 @@ const styles = StyleSheet.create({
   item: {
     fontSize: 25,
     color: 'white',
-    paddingLeft:16
+    alignSelf: 'stretch',
+    paddingLeft:16,
+    position: "absolute", height: "100%", width: "100%",
+    paddingTop: 10
   }
 });

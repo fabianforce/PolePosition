@@ -14,7 +14,7 @@ export default class App extends React.Component {
 const RootStack = createStackNavigator(
   {
     Home: Home,
-    Details: BookMenu,
+    MyBooks: BookMenu,
   },
   {
     initialRouteName: 'Home',
