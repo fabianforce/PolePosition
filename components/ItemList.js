@@ -4,16 +4,16 @@ import {connect} from 'react-redux'
 
 class ItemList extends Component {
     
-    getSuperheroes(){
+    getMemuItems(){
         const {menuitemList} = this.props
-        return superheroesData = menuitemList.map((heroes, key) => {
-            return <Text key={key}>{heroes.item}</Text>
+        return superheroesData = menuitemList.map((items, key) => {
+            return <Text key={key}>{items.item}</Text>
         })
     }
     render(){
         return (
             <View>
-                 {this.getSuperheroes()}
+                 {this.getMemuItems()}
             </View>
         )
     }
