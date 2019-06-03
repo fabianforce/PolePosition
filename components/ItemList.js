@@ -6,7 +6,7 @@ class ItemList extends Component {
     
     getMemuItems(){
         const {menuitemList} = this.props
-        return superheroesData = menuitemList.map((items, key) => {
+        return menuData = menuitemList.map((items, key) => {
             return <Text key={key}>{items.item}</Text>
         })
     }
@@ -19,6 +19,6 @@ class ItemList extends Component {
     }
 }
 const mapStateToProps= state =>{
-    return {menuitemList: state.superheros}
+    return {menuitemList: state.bMenuItems}
 }
 export default connect(mapStateToProps)(ItemList)

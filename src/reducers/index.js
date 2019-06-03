@@ -1,6 +1,6 @@
-import {combineReducers} from 'redux'//no premite comvinar varios reducers
+import {combineReducers} from 'redux'//permite combinar varios reducers
 import MenuItemsReducers from './menuItemsReducers'
 
 export default combineReducers({
-    superheros: MenuItemsReducers //the states
+    bMenuItems: MenuItemsReducers //the states
 })
