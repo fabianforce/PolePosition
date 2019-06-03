@@ -3,6 +3,16 @@ import { StyleSheet, Text, Image, View } from 'react-native';
 import { Constants } from 'expo';
 
 export default class UserHeader extends React.Component {
+  static navigationOptions = {
+    title: 'My Bookings',
+    headerStyle: {
+      backgroundColor: '#181a29',
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+    },
+  };
   render() {
     return (
       <View style={styles.container}>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, Image, View } from 'react-native';
-import { Constants } from 'expo';
 
 export default class Menu extends React.Component {
   render() {
@@ -16,7 +15,7 @@ export default class Menu extends React.Component {
                 borderRadius: 10,
                 justifyContent: 'center',
                 }} source={require('../par.jpg')}/>
-             <Text style={styles.item}>My Bookings</Text>
+             <Text style={styles.item} onPress={() => this.props.myNavigation.navigate('Details')}>My Bookings</Text>
             </View>
             <View style={styles.itemsMenu}>
              <Image style={{
@@ -28,7 +27,7 @@ export default class Menu extends React.Component {
                 borderRadius: 10,
                 justifyContent: 'center',
                 }} source={require('../open.jpg')}/>
-             <Text style={styles.item}>Find Bookings</Text>
+             <Text style={styles.item} onPress={() => this.props.myNavigation.navigate('Details')}>Find Bookings</Text>
             </View>
             <View style={styles.itemsMenu}>
              <Text style={styles.item}>Maps & Venues</Text>
@@ -47,6 +46,8 @@ export default class Menu extends React.Component {
     );
   }
 }
+
+
 const styles = StyleSheet.create({
 
   menuContainer: {

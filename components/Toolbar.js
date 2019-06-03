@@ -10,8 +10,7 @@ export default class Toolbar extends Component {
     return (
         <View style={ styles.toolbar }>
         <Image source={require('../alarm.png')}
-         style={styles.title} />
-            
+         style={styles.alarmImg} />
         </View>
     )
   }
@@ -23,7 +22,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     backgroundColor: "#181a29",
   },
-  title: {
+  alarmImg: {
     margin: 16,
     width: 30,
     height: 30,
